@@ -93,3 +93,5 @@ def print_output(input):
 
     for i, val in enumerate(decoding_):
         print(f'k = {i + 1} -> {val}')
+
+    print('\n\n')
