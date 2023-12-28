@@ -122,4 +122,4 @@ def print_output(prob):
     entropy_ = entropy(prob)
     print(f'Энтропия -> {entropy_}')
 
-    print(f'Избыточность -> {length_code_ - entropy_}\n')
+    print(f'Избыточность -> {length_code_ - entropy_}\n\n')
