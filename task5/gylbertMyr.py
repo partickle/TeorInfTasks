@@ -72,11 +72,9 @@ def decimal_to_binary(num):
     if num < 0:
         return "Только положительные числа"
 
-    # Перевод целой части числа
     integer_part = int(num)
     binary_integer_part = bin(integer_part).replace('0b', '')
 
-    # Перевод дробной части числа
     fractional_part = num - integer_part
     binary_fractional_part = ''
 
@@ -89,11 +87,9 @@ def decimal_to_binary(num):
         else:
             binary_fractional_part += '0'
 
-        # Ограничение на количество цифр после запятой, чтобы избежать бесконечного цикла
         if len(binary_fractional_part) > 10:
             break
 
-    # Сборка полного двоичного числа
     return binary_integer_part + '.' + binary_fractional_part if binary_fractional_part else binary_integer_part
 
 
